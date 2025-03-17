@@ -1,0 +1,313 @@
+ParaBank homePage functionalities
+
+
+1. Verify Home Page Load
+
+1.1 Verify the home page loads successfully
+1.2 Ensure that the page loads correctly.
+1.3 Ensure no errors are present in the console upon page load.
+
+2. Logo Redirection
+2.1: Verify clicking on the logo redirects to the homepage
+2.2 Hover over the homepage logo and verify that the cursor changes to a pointer.
+2.3 Click on the homepage logo and ensure that the home page is visible.
+
+3. Left Menu Functionality
+3.1: Verify the left column menu contains 6 elements
+3.2 Ensure the left menu exists.
+3.3 Verify that the left menu contains 6 list items.
+
+4.ATM Services Section
+4.1: Verify ATM Services section displays correct options
+4.2 Ensure the ATM Services section contains 5 list items.
+4.3 Ensure each item text matches the expected options. Expected texts: ['ATM Services', 'Withdraw Funds', 'Transfer Funds', 'Check Balances', 'Make Deposits']
+4.4 Verify that each list item has a mouseover effect and the cursor changes to 'auto'.
+
+5. Online Services Section
+5.1: Verify Online Services section displays correct options
+5.2 Ensure the Online Services section contains 4 list items.
+5.3 Ensure each item text matches the expected options. 
+Expected texts: ['Online Services', 'Bill Pay', 'Account History', 'Transfer Funds']
+5.4: Verify that each list item has a mouseover effect and the cursor changes to 'auto'.
+
+6.Events Section
+6.1: Verify the third column (Events) contains 4 elements
+6.2: Ensure the events section exists.
+6.3 Verify the events section contains 4 list items.
+
+7. Read More Links
+7.1: Verify the first "Read More" link navigates to the correct page
+7.2 Ensure the first "Read More" link exists.
+7.3 Click the "Read More" link and verify that the page navigates correctly.
+7.4 Verify that the correct title 'Available Bookstore SOAP services:' appears on the new page.
+7.5 Verify the second "Read More" link navigates to the correct page
+7.6 Ensure the second "Read More" link exists.
+7.7 Click the second "Read More" link and verify that the page navigates correctly.
+7.8 Verify that the correct title 'ParaBank News' appears on the new page.
+
+__________________________________________________________________________________________________________________________________________________________________
+8.Successful Registration.
+8.1 Verify that the home page loads successfully.
+8.2 Check that the main menu and 'Register' link are visible.
+
+8.4 Navigation to Register Page
+8.5 Click on the "Register" link.
+8.6 Verify that the text "Signing up is easy!" is visible.
+8.7 Successful Registration
+
+8.8 Fill in registration details: First Name, Last Name, Address, City, State, Zip Code, Phone, SSN, Username, Password, Confirm Password.
+8.9 Click the 'REGISTER' button.
+8.10 Verify the message "Your account was created successfully. You are now logged in." is displayed.
+8.11 Verify the message "Welcome (username)" is displayed.
+8.12 Log Out
+
+9.Show error when first name is missing in registration form
+
+9.1 Navigate to the registration form.
+9.2 Fill in all the required registration details, leaving the "First Name" field empty.
+9.3 Fill in the other required fields (e.g., last name, email, password, etc.).
+9.4 Click the 'REGISTER' button.
+9.5 An error message should be displayed: "First name is required." (Or a similar message indicating that the "First Name" field is mandatory.)
+
+
+10.Show error when password did not match in registration form
+
+10.1 Navigate to the registration form.
+10.2 Fill in all the required registration details (e.g., name, email, etc.).
+10.3 Leave the "Password" input empty.
+10.4 Fill in the "Confirm Password" input field with a value (it can be anything).
+10.5 Click the 'REGISTER' button.
+10.6 An error message should be displayed: "Passwords did not match." (Or an equivalent message indicating password mismatch.)
+
+
+
+11. Register User with Existing Username
+
+11.1 Existing Username Error:
+11.2 Launch the browser.
+11.3 Navigate to the URL: https://parabank.parasoft.com/parabank/index.htm.
+11.4 Verify that the home page is visible successfully.
+11.5 Click the "Register" link on the home page.
+11.6 Verify 'Signing up is easy!' is visible.
+11.7 Fill in the registration details: First Name, Last Name, Address, City, State, Zip Code, Phone, SSN, Username, Password, Confirm Password.
+11.8 Click the 'REGISTER' button.
+11.9 Verify that an error message for the existing username is visible (e.g., "This username already exists.").
+
+
+12. Registering with an Extremely Long Username or Password
+
+12.1 Click on the "Register" link.
+12.2 Verify that the text "Signing up is easy!" is visible.
+12.3 Fill in registration details using an extremely long username and password.
+12.4 Click the 'REGISTER' button.
+2.5 Verify that an error message is displayed indicating that the username or password is too long.
+
+__________________________________________________________________________________________________________________________________________________________________
+13.Login User with Correct Email and Password
+
+13.1 Verify that home page loads successfully 
+13.2 Login with a valid username and password combination.
+13.3 Click the 'Log Out' button.
+14.4 Verify that you are navigated back to the home page.
+
+
+14.Verify error message appears for incorrect email and password
+
+14.1 Enter an invalid email.
+14.2 Enter an invalid password.
+14.3 Click the 'Login' button.
+14.4 Verify that an error message appears, indicating incorrect login credentials.
+
+
+15.Successful login and logout
+
+15.1 Verify that home page loads successfully 
+15.2 Login with a valid username and password combination.
+15.3 Click the 'Log Out' button.
+15.4 Verify After logging out, the user should be redirected to the homepage, and the login form should be visible.
+
+__________________________________________________________________________________________________________________________________________________________________
+16.User Registration Security Tests
+
+16.1 Navigate to the registration page
+16.2 Use a weak password
+16.3 Click the 'Register' button
+16.4 Verify error message is visible and contains the correct message
+
+17.should not allow SQL injection in the username or password fields
+
+17.1 Navigate to the registration page
+17.2 Attempt SQL injection in the username field
+17.3 Enter a valid password
+17.4 Click the 'Register' button
+17.5 Wait for a response
+17.6 Verify that no SQL injection was successful and registration was not completed
+
+18.should show an error when passwords do not match
+
+18.1 Navigate to the registration page
+18.2 Use different passwords for 'password' and 'confirm password' fields
+18.3 Verify that the error message for password mismatch is displayed
+
+__________________________________________________________________________________________________________________________________________________________________
+Account services functions
+
+19.Bill Payment Process Tests
+
+19.1 Log in to the application
+19.2 Navigate to the Bill Payment section
+19.3 Verify the Bill Payment Service page is visible
+19.4 Fill in the payee information and proceed with payment
+19.5 Verify the Bill Payment Complete page is displayed
+19.6 Navigate to the Account Overview section
+19.7 Verify the Accounts Overview page is visible
+
+20. Try to pay a bill without entering payee details.
+
+20.1 Log in to the application
+20.2 Navigate to the Bill Payment section
+20.3 Try to proceed without entering payee details
+20.4 Verify the error messages are displayed for missing payee details
+20.5 Verify the error message for missing account number
+20.6 Verify the second error message for missing account number
+
+21. Open a new "CHECKING" account successfully
+
+21.1 Log in to the application
+21.2 Navigate to the 'Open New Account' section
+21.3 Verify that the 'Open New Account' page is visible
+21.4 Select "CHECKING" from the account type dropdown
+21.5 Wait for a moment before proceeding
+21.6 Click the 'Open New Account' button
+21.7 Verify the success message after opening the account
+
+22.Open a new "SAVINGS" account successfully
+
+22.1 Log in to the application
+22.2 Navigate to the 'Open New Account' section
+22.3 Verify that the 'Open New Account' page is visible
+22.4 Select "SAVINGS" from the account type dropdown
+22.5 Wait for a moment before proceeding
+22.6 Click the 'Open New Account' button
+22.7 Verify the success message after opening the account
+
+
+23.Transfer money between user accounts
+
+23.1 Log in to the application
+23.2 Navigate to the 'Transfer Funds' section
+23.3 Verify that the 'Transfer Funds' page is visible
+23.4 Wait for the page to load and elements to be ready
+23.5 Enter the transfer amount
+23.6 Click the 'Transfer' button to initiate the transfer
+23.7 Verify that the transfer details are displayed again after clicking the button
+
+
+24. Attempt to transfer more money than available balance.
+
+24.1 Log in to the application
+24.2 Navigate to the 'Transfer Funds' section
+24.3 Verify that the 'Transfer Funds' page is visible
+24.4 Wait for the page to load and elements to be ready
+24.5 Enter an amount greater than the available balance (e.g., very large number)
+24.6 Click the 'Transfer' button to attempt the transfer
+24.7 Verify that the error message is displayed due to insufficient balance
+
+
+25. Verify transferred money appears in account overview
+
+25.1 Log in to the application
+25.2 Navigate to the 'Account Overview' section
+25.3 Verify that the 'Accounts Overview' page is visible
+25.4 Verify the transferred amount appears in the account overview
+
+
+26.Update address, city, state, and zip code successfully
+
+
+26.1 Log in to the application
+26.2 Navigate to the 'Update Profile' section
+26.3 Verify that the 'Update Profile' page is visible
+26.4 Wait for the page elements to load
+26.5 Update the profile details (address, city, state, and zip code)
+26.6 Verify that the success message is displayed after the update
+
+
+27.Update first name, last name, and phone number successfully
+
+
+27.1 Log in to the application
+27.2 Navigate to the 'Update Profile' section
+27.3 Verify that the 'Update Profile' page is visible
+27.4 Wait for the page elements to load
+27.5 Update the profile with new first name, last name, and phone number
+27.6 Verify that the success message is displayed after the update
+
+
+28. User Can Successfully Update Contact Name, Last Name, and Phone Number
+
+28.1 Log in to the application
+28.2 Navigate to the 'Update Profile' section
+28.3 Verify that the 'Update Profile' page is visible
+28.4 Wait for the page elements to load
+28.5 Update contact name, last name, and phone number
+28.6 Verify that the success message appears after the update
+
+29. Show error when attempting to update profile with empty fields
+
+29.1 Log in to the application
+29.2 Navigate to the 'Update Profile' section
+29.3 Verify that the 'Update Profile' page is visible
+29.4 Wait for the page elements to load
+29.5 Attempt to update profile with empty fields
+29.6 Verify the error messages are displayed for the required fields
+
+
+30. Request credit successfully
+
+30.1 Log in to the application
+30.2 Navigate to the 'Request Loan' section
+30.3 Fill in the loan request details (amount and down payment)
+30.4 Submit the loan request
+30.5 Verify that the loan request result is visible
+
+
+31. Verify Customer Service Contact Form Submission
+
+31.1 Click on the Customer Care button
+31.2 Verify that the Customer Care page is visible
+31.3 Fill out and submit the Customer Care form
+31.4 Verify that the success message is displayed after form submission
+
+
+32. Verify "Forgot Login Info" Functionality
+
+32.1 Click on the "Forgot login info?" link
+32.2 Verify that the 'Customer Lookup' page is visible
+32.3 Fill in the necessary details to retrieve login information
+32.4 Verify the success message after successfully recovering login info
+
+
+
+CAPTCHA Validation
+__________________________________________________________________________________________________________________________________________________________________
+33.Should display CAPTCHA after multiple failed login attempts
+
+33.1 Verify that the home page loads successfully
+33.2 Attempt to log in with incorrect credentials multiple times (5 times in this case)
+33.3 Wait for the page response (could adjust wait based on network speed)
+33.4 Verify that CAPTCHA is displayed after multiple failed login attempts
+
+34. Should prevent automated logins if CAPTCHA is present
+
+34.1 Verify that the home page loads successfully
+34.2 Attempt to log in with incorrect credentials multiple times (5 times in this case)
+34.3 Wait for the page response (adjust based on network speed)
+34.4 Verify that CAPTCHA is displayed after multiple failed login attempts
+34.5 Attempt to submit the form with a fake CAPTCHA value
+34.6 Verify that an "Incorrect CAPTCHA" error message is displayed
+
+
+
+
+

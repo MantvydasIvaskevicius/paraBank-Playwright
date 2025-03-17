@@ -1,0 +1,53 @@
+ParaBank Website Functionality Description
+
+1. Home Page
+- The home page loads correctly without errors.
+- Clicking on the ParaBank logo redirects to the home page.
+- The left-side menu contains six sections.
+- The "ATM Services" section lists five options.
+- The "Online Services" section lists four options.
+- The "Events" section contains four elements.
+- "Read More" links navigate to the correct pages.
+
+2. User Registration
+- Users can successfully register with valid details.
+- If the first name is missing, an error message appears.
+- If passwords do not match, an error message appears.
+- If the username already exists, an error message appears.
+- If the username or password is too long, an error message appears.
+
+3. Login
+- Users can log in with correct credentials.
+- If login credentials are incorrect, an error message appears.
+- Users can successfully log out.
+
+4. Security Features
+- Weak passwords display error messages.
+- SQL injection attempts are unsuccessful.
+- Password mismatch displays an error message.
+
+5. Account Services
+- Users can process bill payments.
+- If payee details are missing, an error message appears.
+- New "Checking" and "Savings" accounts can be opened.
+- Users can transfer money between accounts.
+- If there are insufficient funds, an error message appears.
+- Transferred money is reflected in the account overview.
+
+6. User Profile Updates
+- Users can update their address, city, state, and zip code.
+- Users can update their first name, last name, and phone number.
+- If fields are left empty when updating the profile, an error message appears.
+
+7. Loan Applications
+- Users can submit a loan request.
+
+8. Customer Support
+- Users can submit inquiries via the customer support form.
+- The "Forgot Login Info" functionality works correctly.
+
+9. CAPTCHA Protection
+- CAPTCHA appears after multiple failed login attempts.
+- Automated logins are restricted when CAPTCHA is active.
+
+
