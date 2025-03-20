@@ -324,7 +324,7 @@ test.describe('CAPTCHA Validation', () => {
             await page.click(selectors.LogInBtn);
             await page.waitForTimeout(1000);
         }
-
+     ///wwww   
         const captcha = page.locator('#captcha');
         await expect(captcha).toBeVisible();
         await page.fill('#captcha-input', 'fakeCaptchaValue');
