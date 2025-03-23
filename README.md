@@ -25,7 +25,7 @@ npx playwright test
 
 ### Run tests in headed mode (UI visible)
 ```sh
-npx playwright test --headed
+npx playwright test --ui
 ```
 
 ## 🛠️ Test Structure
