@@ -296,8 +296,8 @@ test.describe('Account services functions', () => {
         await expect(successMessage).toHaveText('Your login information was located successfully. You are now logged in.');
     });
 });
-test.describe('CAPTCHA Validation', () => { 
-    test('should display CAPTCHA after multiple failed login attempts', async ({ page }) => {
+    test.describe('CAPTCHA Validation', () => { 
+        ztest('should display CAPTCHA after multiple failed login attempts', async ({ page }) => {
         await page.goto('https://parabank.parasoft.com/parabank/index.htm');
         await expect(page).toHaveURL(/parabank/);
         await expect(page.locator('body')).toBeVisible();
