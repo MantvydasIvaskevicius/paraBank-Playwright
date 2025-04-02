@@ -235,7 +235,7 @@ test.describe('Account services functions', () => {
 
         await page.waitForTimeout(2000);
 
-        await page.fill(selectors.amount, "11111111111111111111111");
+        await page.fill(selectors.amount, "111111111111111111111");
         await page.click(selectors.tranferBtn);
 
         await expect(page.locator(selectors.errormsg)).toBeVisible();
