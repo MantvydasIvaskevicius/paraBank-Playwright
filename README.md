@@ -65,6 +65,3 @@ npx playwright test --ui
 ## ✨ Contributors
 👤 Mantvydas
 
----
-🎉 Happy Testing! 🚀
-
