@@ -62,6 +62,5 @@ npx playwright test --ui
 - [Playwright Documentation](https://playwright.dev/)
 - [ParaBank Website](https://parabank.parasoft.com/parabank/index.htm)
 
-## ✨ Contributors
-👤 Mantvydas
+
 
