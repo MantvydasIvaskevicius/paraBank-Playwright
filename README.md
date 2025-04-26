@@ -4,6 +4,7 @@
 
 This project contains automated UI tests for the ParaBank website using [Playwright](https://playwright.dev/).
 
+
 ## 🚀 Getting Started
 
 ### 📌 Prerequisites
