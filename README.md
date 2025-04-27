@@ -4,6 +4,7 @@
 
 This project contains automated UI tests for the ParaBank website using [Playwright](https://playwright.dev/).
 
+
 ## 🚀 Getting Started
 
 ### 📌 Prerequisites
@@ -62,6 +63,5 @@ npx playwright test --ui
 - [Playwright Documentation](https://playwright.dev/)
 - [ParaBank Website](https://parabank.parasoft.com/parabank/index.htm)
 
-## ✨ Contributors
-👤 Mantvydas
+
 
