@@ -250,6 +250,10 @@ test.describe('Account services functions', () => {
         await page.waitForTimeout(1000);
 
 
+
+
+
+        
         await helper.updateProfile(page);
 
         await expect(page.locator(selectors.successUpdt)).toBeVisible();
