@@ -250,7 +250,7 @@ test.describe('Account services functions', () => {
         await page.waitForTimeout(1000);
         
 
-        
+
         
         await helper.updateProfile(page);
 
