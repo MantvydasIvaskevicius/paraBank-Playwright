@@ -251,8 +251,6 @@ test.describe('Account services functions', () => {
 
 
 
-
-        
         await helper.updateProfile(page);
 
         await expect(page.locator(selectors.successUpdt)).toBeVisible();
