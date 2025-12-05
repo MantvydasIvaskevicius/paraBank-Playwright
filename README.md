@@ -24,6 +24,7 @@ npx playwright install
 npx playwright test
 ```
 
+
 ### Run tests in headed mode (UI visible)
 ```sh
 npx playwright test --ui
